@@ -27,24 +27,37 @@ $(document).ready(function(){ // When page is ready execute this code
         startDelay: 5000,
         showCursor: false
     });
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        items: 4,
-        responsive:{
-            0:{
-                items:1
-            },
-            480:{
-                items:2
-            },
-            768:{
-                items:3
-            },
-            938:{
-                items:4
-            }
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        480:{
+            items:2
+        },
+        768:{
+            items:3
+        },
+        938:{
+            items:4
         }
-    });
+    }
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+});
+
+
     var windowH =$(window).height();
     $(window).bind('resize', function(){
         windowH=$(window).height();
@@ -52,15 +65,22 @@ $(document).ready(function(){ // When page is ready execute this code
 
     var skillsTopOffset = $(".skillSec").offset().top;
     var statsTopOffset = $(".statsSec").offset().top;
+    var timelineTopOffset = $('.timeline').offset().top;
     var countUpFinished= false;
     $(window).scroll(function(){
         //Fixed navbar 
             if(window.pageXOffset>windowH){
                 $('.navbar-flat').addClass('navbar-fixed-top');
+                $('.firstSec').addClass('fixed');
             }
             else{
                 $('.navbar-flat').removeClass('navbar-fixed-top');
+                $('.firstSec').removeClass('fixed');
             }
+            if(window.pageYOffset > timelineTopOffset-windowH+200)
+		{
+			$('.timeline #cont').addClass('fadeInUp');
+		}
         if(window.pageYOffset>skillsTopOffset - $(window).height()+200){
             $('.chart').easyPieChart({
                 easing: 'easeInOut',

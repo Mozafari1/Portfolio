@@ -28,6 +28,17 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138521276-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138521276-1');
+</script>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -80,11 +91,15 @@
       <li class="nav-item">
         <a class="nav-link" href="#stats">Stats</a>
       </li>
+    
       <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="#experience">Experience</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
       </li>
     </ul>
   </div>
@@ -248,14 +263,51 @@
     </div>
    </div>
 </div>
-<div id ="contact" class="contactSection section">
-    <div class="col-md-12 text-center">
-        <p class="subhaed">Like what you see?</p>
-        <h2>I'd love to hear from you!</h2>
-        <a href="mailTo:rahmat@mozafari.no" class="contactB">GET IN TOUCH!</a>
-    </div>
-</div>
 
+<!-- TimeLine-->
+<section class="experience section" id="experience">
+		<div class="container">
+			<div class="divider"></div>
+			<div class="heading">
+				<h2>TIMELINE</h2>
+			</div>
+			<div class="row">
+
+<div class="timeline">
+        
+            <div class="left" id ="cont">
+                <div class="content">
+                    <div class="innercontent">
+                        <h2 class="h2ps">August 2013 - June 2016</h2>
+                        <h2 class="h2p">Dønski Videregående Skole</h2>
+                        <p>High School</p>
+                        <h3>Studied pecialization in General Studies</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="right"id ="cont">
+            <div class="content">
+                    <div class="innercontent">
+                        <h2 class="h2ps">October 2013 </h2>
+                        <h2 class="h2p"> KIWI</h2>
+                        <h3>Sales Manager</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="left"id ="cont">
+            <div class="content">
+                    <div class="innercontent">
+                        <h2 class="h2ps">August 2017</h2>
+                        <h2 class="h2p"> University of South-Eastern Norway (USN)</h2>
+                        <h3>Studying Computer Engineering</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+		</div>
+		</div>
+    </section>
+    
 <div id="portfolio" class="section">
 
 		<div class="container">
@@ -588,7 +640,18 @@
 
 		</div>
 
-	</div>
+    </div>
+<div id ="contact" class="contactSection section">
+    <div class="col-md-12 text-center">
+        <p class="subhaed">Like what you see?</p>
+        <h2>I'd love to hear from you!</h2>
+        <a href="mailTo:rahmat@mozafari.no" class="contactB">GET IN TOUCH!</a>
+    </div>
+</div>   
+<!--Contact Section-->
+<div id="map"></div>
+	<div class="clear"></div>
+<!--Footer Section-->
 
  <div class="copyrightSection">
      <div class="col-md-12 text-center">
@@ -596,7 +659,7 @@
           <a href="https://www.instagram.com/lp_with_rahmat/"><i class="fab fa-instagram" style="color:#F56040;"></i></a> 
   <a href="https://www.youtube.com/channel/UCow-m8KxH7G0MiePPQeREBw"><i class="fab fa-youtube" style="color:red;"></i></a> 
   <a href="https://www.facebook.com/R2hm2t.Davidsen"><i class="fab fa-facebook-f" ></i></a>
-<a href="https://www.linkedin.com/in/rahmat-mozafari-15844017b"><i class="fab fa-linkedin" style="color:cornflowerblue; "></i></a>
+    <a href="https://www.linkedin.com/in/rahmat-mozafari-15844017b"><i class="fab fa-linkedin" style="color:cornflowerblue; "></i></a>
   <a href="https://github.com/Mozafari1"><i class="fab fa-github" style="color:grey;"></i></a> 
  
           </p>
