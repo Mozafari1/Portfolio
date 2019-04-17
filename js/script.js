@@ -21,7 +21,7 @@ $(document).ready(function(){ // When page is ready execute this code
 
     });
     var typed = new Typed(".typed", {
-        strings: ["Software Engineer", "Web Developer","Computer Science Student"],
+        strings: ["Software Engineer", "Web Developer", "Computer Science Student"],
         typeSpeed: 70,
         loop: true,
         startDelay: 5000,
