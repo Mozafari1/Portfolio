@@ -109,5 +109,9 @@ $(document).ready(function(){ // When page is ready execute this code
             body.removeClass("fixedNav");
         }
     }
- 
+    $(document).on('click','.navbar-collapse.show',function(e) {
+        $(this).collapse('hide');
+    });
+
 });
+
