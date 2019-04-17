@@ -62,7 +62,7 @@
   </nav>
 </div>
 
-<nav id="navigation" class="navbar navbar-expand-lg ">
+<nav id="navigation" class="navbar navbar-expand-lg navbar-flat">
   <a class="navbar-brand" href="#">Rahmat Mozafari</a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +70,7 @@
   </button>
  
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav" id="navbarUl">
       <li class="nav-item">
         <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
       </li>

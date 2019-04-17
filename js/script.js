@@ -45,11 +45,22 @@ $(document).ready(function(){ // When page is ready execute this code
             }
         }
     });
-  
+    var windowH =$(window).height();
+    $(window).bind('resize', function(){
+        windowH=$(window).height();
+    });
+
     var skillsTopOffset = $(".skillSec").offset().top;
     var statsTopOffset = $(".statsSec").offset().top;
     var countUpFinished= false;
     $(window).scroll(function(){
+        //Fixed navbar 
+            if(window.pageXOffset>windowH){
+                $('.navbar-flat').addClass('navbar-fixed-top');
+            }
+            else{
+                $('.navbar-flat').removeClass('navbar-fixed-top');
+            }
         if(window.pageYOffset>skillsTopOffset - $(window).height()+200){
             $('.chart').easyPieChart({
                 easing: 'easeInOut',
@@ -69,7 +80,7 @@ $(document).ready(function(){ // When page is ready execute this code
                 var element =$(this);
                 var end_val = parseInt(element.text());
                 element.countup(end_val);
-            })
+            });
             countUpFinished=true;
         }
     });
@@ -89,6 +100,14 @@ $(document).ready(function(){ // When page is ready execute this code
         });
         return false;
     });
+
+    $("#navbarUl a").click(function(){
+        $("#navbarUl .active").removeClass("active");
+        $(this).addClass("active");
+  
+        return false;
+     });
+     
     $("#navigation li a").click(function(e){
         e.preventDefault();
         var targetE = $(this).attr("href");
@@ -109,7 +128,7 @@ $(document).ready(function(){ // When page is ready execute this code
             body.removeClass("fixedNav");
         }
     }
-    $(document).on('click','.navbar-collapse.show',function(e) {
+    $('.navbar-nav a').on('click','.navbar-collapse.show',function() {
         $(this).collapse('hide');
     });
 
