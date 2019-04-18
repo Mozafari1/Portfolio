@@ -179,6 +179,7 @@ body {
     margin-top: 20px;
     border: 1px solid #fff;
     border-radius: 3px;
+    margin-bottom: 20px;
 }
 
 .contactB:hover {
@@ -187,7 +188,15 @@ body {
     background-color: white;
     border: #95a5a6;
 }
-
+.kont{
+    color: #34495e;
+}
+#kontakt{
+    max-width: 700px;
+}
+input{
+    margin-bottom: 6px;
+}
 .filter a {
     color: #95a5a6;
     border: 2px solid #95a5a6;
@@ -613,9 +622,9 @@ h3 {
     font-size: 18px;
 }
 
-#map {
+/* #map {
     float: left;
     width: 100%;
     height: 390px;
     border-top: 4px solid #d82c2e;
-}
+} */

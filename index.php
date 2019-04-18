@@ -29,6 +29,16 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138521276-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138521276-1');
+</script>
+
 
 
 
@@ -638,6 +648,89 @@
         <p class="subhaed">Like what you see?</p>
         <h2>I'd love to hear from you!</h2>
         <a href="mailTo:rahmat@mozafari.no" class="contactB">GET IN TOUCH!</a>
+
+        <?php
+// Initialize variables to null.
+$NameError="";
+$EmailError="";
+
+//On Submitting form, below function will execute
+//Submit Scope starts from here
+if(isset($_POST['Submit'])){
+
+ if(empty($_POST["Name"])){
+$NameError="*Name is Required";
+ }
+ else{
+$Name=Test_User_Input($_POST["Name"]);
+// check Name only contains letters and whitespace
+if(!preg_match("/^[A-Za-z\. ]*$/",$Name)){
+$NameError="Only Letters and white sapace are allowed";
+}
+ }
+  if(empty($_POST["Email"])){
+$EmailError="*Email is Required";
+ }
+ else{
+$Email=Test_User_Input($_POST["Email"]);
+// check if e-mail address syntax is valid or not
+if(!preg_match("/[a-zA-Z0-9._-]{3,}@[a-zA-Z0-9._-]{3,}[.]{1}[a-zA-Z0-9._-]{2,}/",$Email))
+{
+$EmailError="Invalid Email Format";
+}
+}
+ 
+if(!empty($_POST["Name"])&&!empty($_POST["Email"])){
+if((preg_match("/^[A-Za-z\. ]*$/",$Name)==true)&&(preg_match("/[a-zA-Z0-9._-]{3,}@[a-zA-Z0-9._-]{3,}[.]{1}[a-zA-Z0-9._-]{2,}/",$Email)==true))
+{
+$emailTo="rahmat@mozafari.no";
+ $subject="Contact Form";
+ $body=" Name : ".$_POST["Name"]."
+ Email : ".$_POST["Email"].
+ "
+ Message :: ".$_POST["Comment"];
+ $Sender="From: $Email";
+     if (mail($emailTo, $subject, $body, $Sender));
+}
+}
+}//Submit Scope  Ends here
+//Function to get and throw data to each of the field final varriable like Name / Gender etc.
+function Test_User_Input($Data){
+    return $Data;
+}
+
+//php code ends here
+?>
+
+<div class="container" id="kontakt">
+
+<div class="card">
+<div class="card-header">
+<h3 class="kont">Contact Me</h3>
+<small class="kont">Got a question? I'd love to hear from you. Send me a message and I'll respond as soon as possible</small>
+</div>
+<div class="card-body">
+
+<form  action="" method="post" >
+
+
+<input class="input form-control" type="text" Name="Name" value="" placeholder="Name *">
+<small style="color:red; float:left"><?php echo $NameError;  ?></small>
+<input class="input form-control" type="text" Name="Email" value="" placeholder="Email *">
+<small style="color:red; float:left"><?php echo $EmailError; ?></small>
+
+<textarea class="form-control mb-2"Name="Comment" rows="5" cols="25" placeholder="Message"></textarea>
+
+<input class="btn btn-success btn-md" type="Submit" Name="Submit" value="Send Message"> 
+
+
+</form>
+
+</div>
+
+</div>
+</div>
+<!-- end contact -->
     </div>
 </div>   
 <!--Contact Section-->
