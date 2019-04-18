@@ -144,12 +144,12 @@
                 <p>Used in most of my web based projects</p>
         </div>
         <div class="skill">
-            <span class="chart" data-percent="63">
-                <span class="percent">63</span>
+            <span class="chart" data-percent="45">
+                <span class="percent">45</span>
                 <canvas height="152" width="152"></canvas>
             </span>
                 <h4>Java</h4>
-                <p>Used in most of my web based projects</p>
+                <p>I use this sometimes</p>
         </div>
         <div class="skill">
             <span class="chart" data-percent="71">
@@ -168,20 +168,20 @@
                 <p>Used in most of my application based projects</p>
         </div>
         <div class="skill">
-            <span class="chart" data-percent="58">
-                <span class="percent">58</span>
+            <span class="chart" data-percent="65">
+                <span class="percent">65</span>
                 <canvas height="152" width="152"></canvas>
             </span>
                 <h4>Kotlin</h4>
-                <p>Used in most of my mobile app based projects</p>
+                <p>Used in all of my Android apps</p>
         </div>
         <div class="skill">
             <span class="chart" data-percent="75">
                 <span class="percent">71</span>
                 <canvas height="152" width="152"></canvas>
             </span>
-                <h4>SQL</h4>
-                <p>Used in most of my web based projects</p>
+                <h4>MySQLi/PDO</h4>
+                <p>Used with PHP project </p>
         </div>
         <div class="skill">
             <span class="chart" data-percent="78">
@@ -189,7 +189,7 @@
                 <canvas height="152" width="152"></canvas>
             </span>
                 <h4>Python</h4>
-                <p>Used in most of my API and other based projects</p>
+                <p>The first programming language I was introduced to</p>
         </div>
         <div class="skill">
             <span class="chart" data-percent="64">
@@ -197,7 +197,31 @@
                 <canvas height="152" width="152"></canvas>
             </span>
                 <h4>JS</h4>
-                <p>Used in most of my web based projects</p>
+                <p>Took an online course on this</p>
+        </div>
+        <div class="skill">
+            <span class="chart" data-percent="40">
+                <span class="percent">40</span>
+                <canvas height="152" width="152"></canvas>
+            </span>
+                <h4>Swift</h4>
+                <p>Took an online course on this</p>
+        </div>
+        <div class="skill">
+            <span class="chart" data-percent="70">
+                <span class="percent">70</span>
+                <canvas height="152" width="152"></canvas>
+            </span>
+                <h4>HTML5</h4>
+                <p>I started creating websites in University and have been ever since </p>
+        </div>
+        <div class="skill">
+            <span class="chart" data-percent="70">
+                <span class="percent">70</span>
+                <canvas height="152" width="152"></canvas>
+            </span>
+                <h4>CSS</h4>
+                <p>I have been using this since I started making websites</p>
         </div>
     </div>
 
