@@ -148,7 +148,7 @@ $('.stop').on('click',function(){
             body.removeClass("fixedNav");
         }
     }
-    $('.navbar-nav a').on('click','.navbar-collapse.show',function() {
+    $(document).on('click','.navbar-collapse.show',function(e) {
         $(this).collapse('hide');
     });
     function initMap() {
