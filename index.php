@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/superslides.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
@@ -28,8 +29,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138521276-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -656,7 +656,7 @@
  <div class="copyrightSection">
      <div class="col-md-12 text-center">
      <p class="lead text-center"><strong >Oslo, Norway | </strong> Created by | Rahmat Mozafari | &copy;<span id="year"></span> | All right reserved | Follow me on  
-          <a href="https://www.instagram.com/lp_with_rahmat/"><i class="fab fa-instagram" style="color:#F56040;"></i></a> 
+    <a href="https://www.instagram.com/lp_with_rahmat/"><i class="fab fa-instagram" style="color:#F56040;"></i></a> 
   <a href="https://www.youtube.com/channel/UCow-m8KxH7G0MiePPQeREBw"><i class="fab fa-youtube" style="color:red;"></i></a> 
   <a href="https://www.facebook.com/R2hm2t.Davidsen"><i class="fab fa-facebook-f" ></i></a>
     <a href="https://www.linkedin.com/in/rahmat-mozafari-15844017b"><i class="fab fa-linkedin" style="color:cornflowerblue; "></i></a>
@@ -677,10 +677,10 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/countUp.js"></script>
 <script src="js/countUp-jquery.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
