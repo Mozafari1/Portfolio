@@ -81,7 +81,8 @@ body {
 
 .skillSec,
 .contactSection,
-.experience {
+.experience
+ {
     background-color: #34495e;
     color: #fff;
 }
@@ -112,7 +113,7 @@ body {
     font-size: 40px;
 }
 
-.chart .percent::after {
+.chart .bar .percent::after {
     content: '%';
 }
 
@@ -188,15 +189,19 @@ body {
     background-color: white;
     border: #95a5a6;
 }
-.kont{
+
+.kont {
     color: #34495e;
 }
-#kontakt{
+
+#kontakt {
     max-width: 700px;
 }
-input{
+
+input {
     margin-bottom: 6px;
 }
+
 .filter a {
     color: #95a5a6;
     border: 2px solid #95a5a6;
@@ -434,7 +439,7 @@ input{
     max-width: 1200px;
     margin: auto;
     position: relative;
-    
+
 }
 
 .timeline:after {
@@ -499,10 +504,12 @@ input{
 
 .left {
     left: 0;
+    animation: 0.2s;
 }
 
 .right {
     left: 50%;
+    animation: 0.4s;
 }
 
 .right:after {
@@ -622,9 +629,116 @@ h3 {
     font-size: 18px;
 }
 
+
+
 /* #map {
     float: left;
     width: 100%;
     height: 390px;
     border-top: 4px solid #d82c2e;
 } */
+.prog{
+    background: #34495e;
+
+    
+}
+
+.innerprog{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    position: relative;
+    color: white;
+    margin-bottom: -10%;
+}
+
+.NO, .EN, .FA{
+    padding: 20px;
+  
+}
+.bar p:nth-child(1){
+    float: right;
+}
+.bar{
+    padding-bottom: 20px;
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 4px 3px 14px 3px #067be9b3;
+    width: 360px;
+    
+}
+.bar:hover {
+    -webkit-transform: scale(1.04, 1.04);
+    -moz-transform: scale(1.04, 1.04);
+    -o-transform: scale(1.04, 1.04);
+    -ms-transform: scale(1.04, 1.04);
+    transform: scale(1.04, 1.04);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: #2187e7;
+    -webkit-transition: all 0.3s ease-in, 1s;
+    -moz-transition: all 0.3s ease-in, 1s;
+    -o-transition: all 0.3s ease-in, 1s;
+    -ms-transition: all 0.3s ease-in, 1s;
+    transition: all 0.3s ease-in, 1s;
+}
+.bar span:hover{
+    background: #c12728;
+   
+        -webkit-transform: scale(1.01, 1.01);
+        -moz-transform: scale(1.01, 1.01);
+        -o-transform: scale(1.01, 1.01);
+        -ms-transform: scale(1.01, 1.01);
+        transform: scale(1.01, 1.01);
+    }
+
+.norsk{
+    
+    width: 80%;
+    animation: norsk 2.3s;
+  
+
+}
+.english{
+    width: 70%;
+    animation: english  4.5s;
+
+}
+.farsi{
+    width: 90%;
+    animation: farsi  6.3s;
+
+}
+@keyframes norsk{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+        
+    }
+}
+@keyframes english{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes farsi{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
