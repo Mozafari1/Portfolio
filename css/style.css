@@ -661,6 +661,7 @@ h3 {
     float: right;
 }
 .bar{
+    margin-left: 4px;
     padding-bottom: 20px;
     background: #353b48;
     display: block;
@@ -688,6 +689,7 @@ h3 {
     -o-transition: all 0.3s ease-in, 1s;
     -ms-transition: all 0.3s ease-in, 1s;
     transition: all 0.3s ease-in, 1s;
+
 }
 .bar span:hover{
     background: #c12728;
@@ -703,7 +705,6 @@ h3 {
     
     width: 80%;
     animation: norsk 2.3s;
-  
 
 }
 .english{
