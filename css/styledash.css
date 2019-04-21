@@ -1,0 +1,31 @@
+
+body {
+    background: linear-gradient(rgba(0,12,50,0.34), rgba(0,12,50,0.34)), url(../images/natur.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color:black;
+}
+  
+ .fix{
+     text-align: center;
+     color: white;
+     font-size: 2em; 
+ }
+
+.comment-block{
+    background-color: floralwhite;
+}
+.navbar-expend-lg{
+
+    background-color: rgba(173, 59, 59, 0.26);
+    
+
+}
+.card{
+    background: rgba(27, 27, 27, 0.25);
+    margin: 10%;
+}
+
+.Error{
+    color:red;
+}

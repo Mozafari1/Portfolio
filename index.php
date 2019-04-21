@@ -1,6 +1,7 @@
+<?php session_start();
+ob_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <!-- Optional theme -->
@@ -126,7 +127,33 @@
                     <hr>
                     <p class="aboutText">Hi, there! I'm Rahmat Mozafari from Oslo, Norway. I currently studying computer Engineering at University of South-Eastern Norway (USN). I have some experience creating software, mobile apps, and websites for both myself and for clients. I have experience prgramming in many different languages such as C++, C, Java, Kotlin, PHP, Python, SQL and Objective-C, however some of my favourite projects involve working in Swift for iOS.</p>
                     <p class="aboutText">Graduating in 2020 from Uinversity of South-Eastern Norway in Computer Science. </p>
+                    <div>
+        <?php
+           include "include/req.php";
+            global $ConnectingDB;
+            $sql= "SELECT * FROM posts";
+            $stmt = mysqli_query($ConnectingDB,$sql);
+            while($DataRows = mysqli_fetch_assoc($stmt)){
+              $Id =  mysqli_real_escape_string($ConnectingDB,$DataRows["id"]);
+              $name =  mysqli_real_escape_string($ConnectingDB,$DataRows["title"]);
+
+    
+        ?>    
+       
+           
+            <a class="btdown" href="download.php?id=<?php echo htmlentities( $Id); ?>"> 
+           <i class="fas fa-file-download"></i> DOWNLOAD RESUME
+           <br>
+           <small class="name"><?php echo htmlentities( $name); ?></small>
+
+        </a>
+           
+          
+
+            <?php } ?>
+                    </div>
                 </div>
+               
             </div>
         </div>
     </div>
