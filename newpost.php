@@ -4,7 +4,7 @@ include "include/req.php";
 $_SESSION["TrackingURL"]=$_SERVER["PHP_SELF"];
 
 
-//Confirm_Login();
+Confirm_Login();
 if(isset($_POST["Submit"])){
   global $ConnectingDB;
   $PostTitle = mysqli_real_escape_string($ConnectingDB, $_POST["PostTitle"]);
